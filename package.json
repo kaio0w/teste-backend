@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/mysql": "^2.15.26",
+    "@types/node": "^20.11.30",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "start": "ts-node-dev --files -r tsconfig-paths/register --inspect --ignore-watch node_modules src/index.ts",
+    "test": "mocha --require ts-node/register test/**/*.test.ts"
+  }
+}
